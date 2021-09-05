@@ -97,7 +97,7 @@ public class OneEditAway {
 
     @ParameterizedTest
     @MethodSource("arguments")
-    void testWithHashSet(String s1, String s2, boolean expected) {
+    void test(String s1, String s2, boolean expected) {
         var actual = isOneEditAway(s1, s2);
 
         System.out.println("expected = " + expected + ", actual = " + actual);
