@@ -28,17 +28,23 @@ public class OneEditAway {
             Walk through strings comparing elements at the same position in strings
             if more than 1 diff return false
             else return true
+
+            O(Math.min(n, m))
         Check if one char can be added to make strings same
             if abs(len(s1) - len(s2)) > 1 then not possible
             Walk through strings
             if s1[i] != s2[i] check if s1[i+1] == s2[i] or s1[i] == s2[i+1] considering i can be the last element
             if more than 1 diffs return false
             else return true
+
+            O(Math.min(n, m))
         Check if one char can be deleted to make strings same
             Walk through strings
             if s1[i] != s2[i] check if s1[i+1] == s2[i] or s1[i] == s2[i+1] considering i can be the last element
 
         adding element == deleting element
+
+        O(Math.min(n, m))
      */
     static boolean isOneEditAway(String s1, String s2) {
         if (s1 == null && s2 != null || s1 != null && s2 == null) return false;
