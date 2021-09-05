@@ -9,6 +9,13 @@ import java.util.stream.Stream;
 import static com.github.ka.cci.linkedlist.LinkedListUtils.createList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+p 94, 6th edition
+
+2.2
+Return Kth to Last: Implement an algorithm to find the kth to last element of a singly linked list.
+Hints: #8, #25, #47, #67, # 726
+ */
 public class ReturnKLast {
 
     /*
