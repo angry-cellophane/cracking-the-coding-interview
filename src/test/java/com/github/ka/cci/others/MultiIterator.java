@@ -21,9 +21,7 @@ public class MultiIterator<T> {
             throw new IllegalStateException();
         }
 
-        var element = currentList.get(index);
-        index++;
-        return element;
+        return currentList.get(index++);
     }
 
     public boolean hasNext() {
