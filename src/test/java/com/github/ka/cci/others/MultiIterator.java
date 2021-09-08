@@ -25,11 +25,11 @@ public class MultiIterator<T> {
     }
 
     public boolean hasNext() {
-        updateLists();
+        updateState();
         return currentList != null;
     }
 
-    private void updateLists() {
+    private void updateState() {
         if (currentList == null || index >= currentList.size()) {
             currentList = lists.isEmpty() ? null : lists.poll();
             index = 0;
